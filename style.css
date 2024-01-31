@@ -29,7 +29,26 @@ main {
     padding: 20px;
 }
 
-article {
+/* Ajoutez ces styles à votre fichier style.css */
+
+#interviews .interview {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+}
+
+#interviews .interview h2 {
+    color: #333; /* Couleur du texte pour le titre */
+}
+
+#interviews .interview p {
+    color: #555; /* Couleur du texte pour le paragraphe */
+}
+
+
+.persona {
     background-color: white;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -51,11 +70,9 @@ footer {
 
 idee {
     text-align: center; /* Centre le texte dans la section idee */
-    
     padding: 20px;
     margin: 20px 0;
-    border-radius: 8px;
-   
+    border-radius: 8px;  
 }
 
 idee h2 {

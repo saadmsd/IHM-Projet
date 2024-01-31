@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog IHM</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Ajoutez ces styles à votre fichier style.css */
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,37 +24,72 @@
     </header>
 
     <nav>
-        <a href="#">Accueil</a>
-        <a href="#">Interviews</a>
-        <a href="#">Personas</a>
-        <a href="#">Vidéos</a>
+        <a href="#" onclick="changeSection('accueil')">Accueil</a>
+        <a href="#" onclick="changeSection('interviews')">Interviews</a>
+        <a href="#" onclick="changeSection('personas')">Personas</a>
+        <a href="#" onclick="changeSection('videos')">Vidéos</a>
     </nav>
 
     <main>
-        <idee>
-            <h2>Objets perdus</h2>
-        
-            <p>L'idée de notre projet se porte sur la thématique des objets perdus</p>
-        </idee>
-        <article>
-            <h2>Titre de l'article 1</h2>
-            <p>Date de publication: 31 janvier 2024</p>
-            <p>Ceci est le contenu de l'article.</p>
-        </article>
+        <div id="accueil" class="visible">
+            <idee>
+                <h2>Objets perdus</h2>
+                <p>L'idée de notre projet se porte sur la thématique des objets perdus</p>
+            </idee>
+            
+            <!-- Ajoutez d'autres articles ici -->
+        </div>
 
-        <article>
-            <h2>Titre de l'article 2</h2>
-            <p>Date de publication: 30 janvier 2024</p>
-            <p>Ceci est le contenu de l'article.</p>
-        </article>
+        <div id="interviews" class="hidden">
+            <!-- Contenu de la section Interviews -->
+            <interview>
+                <h2>Titre de l'interview 1</h2>
+                <p>Date de publication: 31 janvier 2024</p>
+                <p>Ceci est le contenu de l'article.</p>
+            </interview>
 
-        <!-- Ajoutez d'autres articles ici -->
+            <interview>
+                <h2>Titre de l'interview 2</h2>
+                <p>Date de publication: 30 janvier 2024</p>
+                <p>Ceci est le contenu de l'article.</p>
+            </interview>
+        </div>
 
+        <div id="personas" class="hidden">
+            <!-- Contenu de la section Personas -->
+            <persona>
+                <h2>Persona 1</h2>
+                <p>Présentation du persona 1.</p>
+            </persona>
+
+            <persona>
+                <h2>Persona 2</h2>
+                <p>Présentation du persona 2.</p>
+            </persona>
+        </div>
+
+        <div id="videos" class="hidden">
+            <!-- Contenu de la section Vidéos -->
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
     </footer>
+
+    <script>
+        function changeSection(sectionId) {
+            // Masque toutes les sections
+            document.querySelectorAll('main > div').forEach(section => {
+                section.classList.remove('visible');
+                section.classList.add('hidden');
+            });
+
+            // Affiche la section spécifique
+            document.getElementById(sectionId).classList.remove('hidden');
+            document.getElementById(sectionId).classList.add('visible');
+        }
+    </script>
 
 </body>
 </html>
