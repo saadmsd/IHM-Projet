@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0 8px;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Ajoutez ces styles à votre fichier styles.css */
+
+idee {
+    text-align: center; /* Centre le texte dans la section idee */
+    
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+   
+}
+
+idee h2 {
+    color: #333; /* Couleur du texte pour le titre */
+}
+
+idee p {
+    color: #555; /* Couleur du texte pour le paragraphe */
+}
