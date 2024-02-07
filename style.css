@@ -29,23 +29,43 @@ main {
     padding: 20px;
 }
 
-/* Ajoutez ces styles à votre fichier style.css */
 
-#interviews .interview {
-    background-color: white;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Légère ombre */
+
+
+#interviews interview {
+    
+    flex: 1 0 300px; /* Répartir l'espace disponible de manière équitable, avec une largeur minimale de 300px */
+    background-color: white; /* Couleur de fond */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    gap : 20px;
+    margin-bottom: 20px; /* Marge inférieure */
+    display: flex; /* Utiliser le modèle de boîte flexible */
+    flex-direction: column; /* Organiser les éléments verticalement */
+    
+
 }
 
-#interviews .interview h2 {
-    color: #333; /* Couleur du texte pour le titre */
+#interviews interview h2 {
+    color: #333; /* Couleur du titre */
+    font-size: 1.2em; /* Taille du titre */
+    margin-top: 0; /* Supprimer la marge supérieure */
 }
 
-#interviews .interview p {
-    color: #555; /* Couleur du texte pour le paragraphe */
+#interviews interview a {
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none; /* Supprimer le soulignement par défaut */
 }
+
+#interviews interview a:hover {
+    text-decoration: underline; /* Ajouter un soulignement au survol */
+}
+
+
+
+
+
+
 
 
 .persona {
@@ -66,7 +86,6 @@ footer {
 }
 
 
-/* Ajoutez ces styles à votre fichier styles.css */
 
 idee {
     text-align: center; /* Centre le texte dans la section idee */
@@ -130,6 +149,9 @@ section {
     color: #555;
     font-size: 1em;
     margin-bottom: 0;
+    line-height: 1.5;
+
+    
 }
 
 footer {
