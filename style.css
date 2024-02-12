@@ -210,7 +210,6 @@ footer {
     display: block; /* Assurez-vous que l'image est traitée comme un élément de bloc */
 }
 
-
 #Brainstorming idee_br {
     flex: 1 0 200px; /* Répartir l'espace disponible de manière équitable, avec une largeur minimale de 300px */
     background-color: white; /* Couleur de fond */
@@ -233,3 +232,15 @@ footer {
     font-size: 16px; /* Taille de police */
     margin-top: 5px; /* Espace supplémentaire en haut */
 }
+
+
+#accueil idee img {
+    width: 300px; /* Largeur augmentée de l'image */
+    height: auto; /* Ajuste la hauteur automatiquement pour conserver les proportions */
+    object-fit: cover; /* Recadre l'image pour remplir la boîte sans déformer l'image */
+    object-position: center; /* Centre l'image dans la boîte */
+    border-radius: 8px; /* Coins arrondis */
+    display: block; /* Assure que l'image est traitée comme un élément de bloc */
+    margin: 0 auto; /* Centre l'image horizontalement */
+}
+
