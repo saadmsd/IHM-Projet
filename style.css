@@ -88,6 +88,12 @@ main {
     font-size: 1em;
 }
 
+#personas persona img {
+    width: 100px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
+    border-radius: 50%; /* Pour rendre l'image circulaire */
+    margin-bottom: 10px; /* Espacement en bas de l'image */
+}
 
 footer {
     background-color: #333;
